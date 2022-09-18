@@ -4,7 +4,17 @@
 	<listeners>
 		<listener class-name="Resources.Listeners" />
 	</listeners>
-	<test name="Test">
+	<test name="Login">
+		<classes>
+			<class name="Testcases.LoginTest" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="HomePage">
+		<classes>
+			<class name="Testcases.HomePageTest" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="ResultsPage">
 		<classes>
 			<class name="Testcases.ResultsPageTest" />
 		</classes>

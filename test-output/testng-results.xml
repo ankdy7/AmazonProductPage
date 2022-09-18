@@ -1,29 +1,271 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="7" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-15T20:23:30 IST" name="Default suite" finished-at="2022-09-15T20:23:52 IST" duration-ms="21730">
+  <suite started-at="2022-09-18T13:39:24 IST" name="Suite" finished-at="2022-09-18T13:40:07 IST" duration-ms="42870">
     <groups>
     </groups>
-    <test started-at="2022-09-15T20:23:30 IST" name="Default test" finished-at="2022-09-15T20:23:52 IST" duration-ms="21730">
-      <class name="Testcases.ResultsPageTest">
-        <test-method is-config="true" signature="testStartup()[pri:0, instance:Testcases.ResultsPageTest@3a52dba3]" started-at="2022-09-15T20:23:30 IST" name="testStartup" finished-at="2022-09-15T20:23:45 IST" duration-ms="14909" status="PASS">
+    <test started-at="2022-09-18T13:39:24 IST" name="Login" finished-at="2022-09-18T13:39:37 IST" duration-ms="13382">
+      <class name="Testcases.LoginTest">
+        <test-method is-config="true" signature="testStartup()[pri:0, instance:Testcases.LoginTest@2c78324b]" started-at="2022-09-18T13:39:24 IST" name="testStartup" finished-at="2022-09-18T13:39:31 IST" duration-ms="6919" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStartup -->
-        <test-method signature="getLinkHeadersTest()[pri:0, instance:Testcases.ResultsPageTest@3a52dba3]" started-at="2022-09-15T20:23:45 IST" name="getLinkHeadersTest" finished-at="2022-09-15T20:23:46 IST" duration-ms="549" status="PASS">
+        <test-method signature="checkHomePageNameTest()[pri:0, instance:Testcases.LoginTest@2c78324b]" started-at="2022-09-18T13:39:31 IST" name="checkHomePageNameTest" finished-at="2022-09-18T13:39:31 IST" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkHomePageNameTest -->
+        <test-method signature="checkSignInButtonTest()[pri:1, instance:Testcases.LoginTest@2c78324b]" started-at="2022-09-18T13:39:31 IST" name="checkSignInButtonTest" finished-at="2022-09-18T13:39:32 IST" duration-ms="1358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSignInButtonTest -->
+        <test-method signature="checkSignInPageTest()[pri:2, instance:Testcases.LoginTest@2c78324b]" started-at="2022-09-18T13:39:32 IST" name="checkSignInPageTest" finished-at="2022-09-18T13:39:33 IST" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSignInPageTest -->
+        <test-method signature="checkSignInHeaderTest()[pri:3, instance:Testcases.LoginTest@2c78324b]" started-at="2022-09-18T13:39:33 IST" name="checkSignInHeaderTest" finished-at="2022-09-18T13:39:33 IST" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSignInHeaderTest -->
+        <test-method signature="enterInavlidUsernameTest()[pri:4, instance:Testcases.LoginTest@2c78324b]" started-at="2022-09-18T13:39:33 IST" name="enterInavlidUsernameTest" finished-at="2022-09-18T13:39:34 IST" duration-ms="1041" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterInavlidUsernameTest -->
+        <test-method signature="enterInavlidPasswordTest()[pri:5, instance:Testcases.LoginTest@2c78324b]" started-at="2022-09-18T13:39:34 IST" name="enterInavlidPasswordTest" finished-at="2022-09-18T13:39:37 IST" duration-ms="3241" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-3SNRJKF', ip: '192.168.0.197', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dbccb8754ff4248d68a8941ae28050d8, getElementText {id=f8435e44-c700-4092-8dd8-6a31a4e45213}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Dank\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51770}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51770/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (dbccb8754ff4248d68a8941ae28050d8)] -> css selector: h4.a-alert-heading]
+Session ID: dbccb8754ff4248d68a8941ae28050d8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-3SNRJKF', ip: '192.168.0.197', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dbccb8754ff4248d68a8941ae28050d8, getElementText {id=f8435e44-c700-4092-8dd8-6a31a4e45213}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Dank\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51770}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51770/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (dbccb8754ff4248d68a8941ae28050d8)] -> css selector: h4.a-alert-heading]
+Session ID: dbccb8754ff4248d68a8941ae28050d8
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:201)
+at PageObjects.LoginPage.invalidPasswordText(LoginPage.java:151)
+at Testcases.LoginTest.enterInavlidPasswordTest(LoginTest.java:65)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterInavlidPasswordTest -->
+        <test-method is-config="true" signature="testTeardown()[pri:0, instance:Testcases.LoginTest@2c78324b]" started-at="2022-09-18T13:39:37 IST" name="testTeardown" finished-at="2022-09-18T13:39:37 IST" duration-ms="266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTeardown -->
+      </class> <!-- Testcases.LoginTest -->
+    </test> <!-- Login -->
+    <test started-at="2022-09-18T13:39:38 IST" name="HomePage" finished-at="2022-09-18T13:39:51 IST" duration-ms="12690">
+      <class name="Testcases.HomePageTest">
+        <test-method is-config="true" signature="testStartup()[pri:0, instance:Testcases.HomePageTest@56dc1551]" started-at="2022-09-18T13:39:38 IST" name="testStartup" finished-at="2022-09-18T13:39:45 IST" duration-ms="7136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStartup -->
+        <test-method signature="getLinkHeadersTest()[pri:0, instance:Testcases.HomePageTest@56dc1551]" started-at="2022-09-18T13:39:45 IST" name="getLinkHeadersTest" finished-at="2022-09-18T13:39:48 IST" duration-ms="2545" status="FAIL">
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 1 out of bounds for length 0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 0
+at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+at java.base/java.util.Objects.checkIndex(Objects.java:359)
+at java.base/java.util.ArrayList.get(ArrayList.java:427)
+at PageObjects.HomePage.getLinkHeaders(HomePage.java:27)
+at Testcases.HomePageTest.getLinkHeadersTest(HomePageTest.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getLinkHeadersTest -->
-        <test-method signature="openProductPageTest()[pri:1, instance:Testcases.ResultsPageTest@3a52dba3]" started-at="2022-09-15T20:23:46 IST" name="openProductPageTest" finished-at="2022-09-15T20:23:51 IST" duration-ms="5635" status="PASS">
+        <test-method signature="enterItemNameTest()[pri:1, instance:Testcases.HomePageTest@56dc1551]" started-at="2022-09-18T13:39:48 IST" name="enterItemNameTest" finished-at="2022-09-18T13:39:50 IST" duration-ms="2081" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterItemNameTest -->
+        <test-method is-config="true" signature="testTeardown()[pri:0, instance:Testcases.HomePageTest@56dc1551]" started-at="2022-09-18T13:39:50 IST" name="testTeardown" finished-at="2022-09-18T13:39:51 IST" duration-ms="288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTeardown -->
+      </class> <!-- Testcases.HomePageTest -->
+    </test> <!-- HomePage -->
+    <test started-at="2022-09-18T13:39:51 IST" name="ResultsPage" finished-at="2022-09-18T13:40:07 IST" duration-ms="16200">
+      <class name="Testcases.ResultsPageTest">
+        <test-method is-config="true" signature="testStartup()[pri:0, instance:Testcases.ResultsPageTest@30b6ffe0]" started-at="2022-09-18T13:39:51 IST" name="testStartup" finished-at="2022-09-18T13:40:04 IST" duration-ms="13608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStartup -->
+        <test-method signature="getLinkHeadersTest()[pri:0, instance:Testcases.ResultsPageTest@30b6ffe0]" started-at="2022-09-18T13:40:04 IST" name="getLinkHeadersTest" finished-at="2022-09-18T13:40:04 IST" duration-ms="225" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Apple iPhone 13 (128GB) - Blue']"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-3SNRJKF', ip: '192.168.0.197', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [59958c5c8a5aa653ec219079d2c7a4bc, findElement {using=xpath, value=//span[text()='Apple iPhone 13 (128GB) - Blue']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Dank\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51868}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51868/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 59958c5c8a5aa653ec219079d2c7a4bc]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Apple iPhone 13 (128GB) - Blue']"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-3SNRJKF', ip: '192.168.0.197', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [59958c5c8a5aa653ec219079d2c7a4bc, findElement {using=xpath, value=//span[text()='Apple iPhone 13 (128GB) - Blue']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Dank\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51868}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51868/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 59958c5c8a5aa653ec219079d2c7a4bc
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+at PageObjects.ResultsPage.openProdcutPage(ResultsPage.java:20)
+at Testcases.ResultsPageTest.getLinkHeadersTest(ResultsPageTest.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLinkHeadersTest -->
+        <test-method signature="openProductPageTest()[pri:1, instance:Testcases.ResultsPageTest@30b6ffe0]" started-at="2022-09-18T13:40:06 IST" name="openProductPageTest" finished-at="2022-09-18T13:40:07 IST" duration-ms="106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openProductPageTest -->
-        <test-method is-config="true" signature="testTeardown()[pri:0, instance:Testcases.ResultsPageTest@3a52dba3]" started-at="2022-09-15T20:23:51 IST" name="testTeardown" finished-at="2022-09-15T20:23:52 IST" duration-ms="576" status="PASS">
+        <test-method is-config="true" signature="testTeardown()[pri:0, instance:Testcases.ResultsPageTest@30b6ffe0]" started-at="2022-09-18T13:40:07 IST" name="testTeardown" finished-at="2022-09-18T13:40:07 IST" duration-ms="292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTeardown -->
       </class> <!-- Testcases.ResultsPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- ResultsPage -->
+  </suite> <!-- Suite -->
 </testng-results>

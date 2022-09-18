@@ -4,15 +4,37 @@
   <listeners>
     <listener class-name="Resources.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Login(failed)">
+    <classes>
+      <class name="Testcases.LoginTest">
+        <methods>
+          <include name="testTeardown"/>
+          <include name="testStartup"/>
+          <include name="enterInavlidPasswordTest"/>
+        </methods>
+      </class> <!-- Testcases.LoginTest -->
+    </classes>
+  </test> <!-- Login(failed) -->
+  <test thread-count="5" name="HomePage(failed)">
+    <classes>
+      <class name="Testcases.HomePageTest">
+        <methods>
+          <include name="testTeardown"/>
+          <include name="getLinkHeadersTest"/>
+          <include name="testStartup"/>
+        </methods>
+      </class> <!-- Testcases.HomePageTest -->
+    </classes>
+  </test> <!-- HomePage(failed) -->
+  <test thread-count="5" name="ResultsPage(failed)">
     <classes>
       <class name="Testcases.ResultsPageTest">
         <methods>
           <include name="testTeardown"/>
           <include name="testStartup"/>
-          <include name="openProductPageTest"/>
+          <include name="getLinkHeadersTest"/>
         </methods>
       </class> <!-- Testcases.ResultsPageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- ResultsPage(failed) -->
 </suite> <!-- Failed suite [Suite] -->

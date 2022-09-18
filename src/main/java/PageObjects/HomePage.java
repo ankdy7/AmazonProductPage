@@ -21,7 +21,7 @@ public class HomePage extends BaseTest {
 	public void getLinkHeaders() {
 
 		List<WebElement> linkText = driver.findElements(By.xpath("//a[@data-csa-c-type='link']"));
-		String[] linkTextArray = { "" };
+		
 		System.out.println(linkText.size());
 		for (int i = 1; i < 8; i++) {
 			String x = linkText.get(i).getText() + " ";

@@ -8,12 +8,79 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">21,730</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Login</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">13,382</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">HomePage</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">12,690</td><td></td><td></td></tr>
+<tr><td><a href="#t2">ResultsPage</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">16,200</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">7</th><th class="num">0</th><th class="num">0</th><th class="num attn">3</th><th class="num">42,272</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">Testcases.ResultsPageTest</td><td><a href="#m0">getLinkHeadersTest</a></td><td rowspan="1">1663253625602</td><td rowspan="1">549</td></tr><tr class="passedeven"><td><a href="#m1">openProductPageTest</a></td><td rowspan="1">1663253626159</td><td rowspan="1">5635</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Testcases.LoginTest</td><td><a href="#m0">enterInavlidPasswordTest</a></td><td rowspan="1">1663488574187</td><td rowspan="1">3241</td></tr><tr><th colspan="4">Login &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">Testcases.LoginTest</td><td><a href="#m1">checkHomePageNameTest</a></td><td rowspan="1">1663488571479</td><td rowspan="1">128</td></tr><tr class="passedeven"><td><a href="#m2">checkSignInButtonTest</a></td><td rowspan="1">1663488571620</td><td rowspan="1">1358</td></tr><tr class="passedeven"><td><a href="#m3">checkSignInHeaderTest</a></td><td rowspan="1">1663488573067</td><td rowspan="1">74</td></tr><tr class="passedeven"><td><a href="#m4">checkSignInPageTest</a></td><td rowspan="1">1663488572980</td><td rowspan="1">82</td></tr><tr class="passedeven"><td><a href="#m5">enterInavlidUsernameTest</a></td><td rowspan="1">1663488573143</td><td rowspan="1">1041</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">HomePage &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Testcases.HomePageTest</td><td><a href="#m6">getLinkHeadersTest</a></td><td rowspan="1">1663488585554</td><td rowspan="1">2545</td></tr><tr><th colspan="4">HomePage &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Testcases.HomePageTest</td><td><a href="#m7">enterItemNameTest</a></td><td rowspan="1">1663488588733</td><td rowspan="1">2081</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">ResultsPage &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Testcases.ResultsPageTest</td><td><a href="#m8">getLinkHeadersTest</a></td><td rowspan="1">1663488604769</td><td rowspan="1">225</td></tr><tr><th colspan="4">ResultsPage &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Testcases.ResultsPageTest</td><td><a href="#m9">openProductPageTest</a></td><td rowspan="1">1663488606957</td><td rowspan="1">106</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">Testcases.ResultsPageTest#getLinkHeadersTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Testcases.ResultsPageTest#openProductPageTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Login</h2><h3 id="m0">Testcases.LoginTest#enterInavlidPasswordTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;DESKTOP-3SNRJKF&apos;, ip: &apos;192.168.0.197&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dbccb8754ff4248d68a8941ae28050d8, getElementText {id=f8435e44-c700-4092-8dd8-6a31a4e45213}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Dank\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51770}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51770/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (dbccb8754ff4248d68a8941ae28050d8)] -&gt; css selector: h4.a-alert-heading]
+Session ID: dbccb8754ff4248d68a8941ae28050d8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:201)
+	at PageObjects.LoginPage.invalidPasswordText(LoginPage.java:151)
+	at Testcases.LoginTest.enterInavlidPasswordTest(LoginTest.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Testcases.LoginTest#checkHomePageNameTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Testcases.LoginTest#checkSignInButtonTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Testcases.LoginTest#checkSignInHeaderTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Testcases.LoginTest#checkSignInPageTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Testcases.LoginTest#enterInavlidUsernameTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>HomePage</h2><h3 id="m6">Testcases.HomePageTest#getLinkHeadersTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at PageObjects.HomePage.getLinkHeaders(HomePage.java:27)
+	at Testcases.HomePageTest.getLinkHeadersTest(HomePageTest.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Testcases.HomePageTest#enterItemNameTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ResultsPage</h2><h3 id="m8">Testcases.ResultsPageTest#getLinkHeadersTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Apple iPhone 13 (128GB) - Blue&apos;]&quot;}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;DESKTOP-3SNRJKF&apos;, ip: &apos;192.168.0.197&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [59958c5c8a5aa653ec219079d2c7a4bc, findElement {using=xpath, value=//span[text()=&apos;Apple iPhone 13 (128GB) - Blue&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Dank\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51868}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51868/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 59958c5c8a5aa653ec219079d2c7a4bc
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at PageObjects.ResultsPage.openProdcutPage(ResultsPage.java:20)
+	at Testcases.ResultsPageTest.getLinkHeadersTest(ResultsPageTest.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">Testcases.ResultsPageTest#openProductPageTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

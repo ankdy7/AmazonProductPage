@@ -26,14 +26,6 @@ public class Listeners extends BaseTest implements ITestListener {
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		test.log(Status.PASS, "Test Passed");
-		try {
-			 filepath = getScreenshot(result.getMethod().getMethodName());
-		} catch (IOException e) {
-			
-			e.printStackTrace();
-		}
-		
-		test.addScreenCaptureFromPath(filepath, result.getMethod().getMethodName());
 	}
 
 	

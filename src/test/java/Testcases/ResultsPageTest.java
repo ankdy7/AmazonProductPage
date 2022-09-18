@@ -37,7 +37,7 @@ public class ResultsPageTest extends BaseTest {
 
 	@Test(priority = 0)
 	public void getLinkHeadersTest() {
-		System.out.println(resultspage.checkPrice());
+		System.out.println("Fetched Price: " + resultspage.checkPrice());
 		Assert.assertEquals(resultspage.checkPrice(), "65,900");
 		resultspage.openProdcutPage();
 
@@ -49,6 +49,5 @@ public class ResultsPageTest extends BaseTest {
 		if (!resultspage.openProductPage().contains(str))
 			Assert.fail();
 
-		System.out.println(str + "//////////" + resultspage.openProductPage());
 	}
 }
