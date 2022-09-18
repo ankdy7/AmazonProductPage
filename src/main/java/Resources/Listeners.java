@@ -28,27 +28,25 @@ public class Listeners extends BaseTest implements ITestListener {
 		test.log(Status.PASS, "Test Passed");
 	}
 
-	
-
 	@Override
 	public void onTestFailure(ITestResult result) {
 		test.fail(result.getThrowable());
 		try {
-			 filepath = getScreenshot(result.getMethod().getMethodName());
+			filepath = getScreenshot(result.getMethod().getMethodName());
 		} catch (IOException e) {
-			
+
 			e.printStackTrace();
 		}
-		
+
 		test.addScreenCaptureFromPath(filepath, result.getMethod().getMethodName());
 
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-
+		test.log(Status.SKIP, "Test was Skipped");
 	}
-	
+
 	@Override
 	public void onFinish(ITestContext context) {
 		extent.flush();

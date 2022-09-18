@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Sep 18 13:39:38 IST 2022</td>
+<td>Started on:</td><td>Sun Sep 18 16:07:39 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>12 seconds (12690 ms)</td>
+<tr><td>Total time:</td><td>13 seconds (13662 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,23 +76,15 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='Testcases.HomePageTest.getLinkHeadersTest()'><b>getLinkHeadersTest</b><br>Test class: Testcases.HomePageTest</td>
-<td><div><pre>java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
-	at java.base/java.util.Objects.checkIndex(Objects.java:359)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at PageObjects.HomePage.getLinkHeaders(HomePage.java:27)
+<td><div><pre>java.lang.AssertionError: null
+	at PageObjects.HomePage.getLinkHeaders(HomePage.java:33)
 	at Testcases.HomePageTest.getLinkHeadersTest(HomePageTest.java:36)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2010350054", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2010350054'><pre>java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
-	at java.base/java.util.Objects.checkIndex(Objects.java:359)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at PageObjects.HomePage.getLinkHeaders(HomePage.java:27)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace840042838", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace840042838'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.fail(Assert.java:115)
+	at PageObjects.HomePage.getLinkHeaders(HomePage.java:33)
 	at Testcases.HomePageTest.getLinkHeadersTest(HomePageTest.java:36)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)

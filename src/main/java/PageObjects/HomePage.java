@@ -1,11 +1,14 @@
 package PageObjects;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 import BaseClass.BaseTest;
 
@@ -18,21 +21,16 @@ public class HomePage extends BaseTest {
 
 	StringBuilder sb = new StringBuilder();
 
-	public void getLinkHeaders() {
+	public String checkSelectText() {
 
-		List<WebElement> linkText = driver.findElements(By.xpath("//a[@data-csa-c-type='link']"));
-		
-		System.out.println(linkText.size());
-		for (int i = 1; i < 8; i++) {
-			String x = linkText.get(i).getText() + " ";
-			System.out.print(x);
-			sb.append(x);
-
-		}
-
-		System.out.println();
-		String newStr = sb.toString().substring(0, sb.toString().length() - 1);
-		System.out.println(newStr);
+		Select all = new Select(driver.findElement(By.cssSelector("select#searchDropdownBox")));
+		all.selectByVisibleText("Apps & Games");
+		driver.findElement(By.cssSelector("input#nav-search-submit-button")).click();
+		String text = driver
+				.findElement(By
+						.xpath("//span[@class='a-size-base a-color-base apb-browse-refinements-indent-1 a-text-bold']"))
+				.getText();
+		return text;
 
 	}
 

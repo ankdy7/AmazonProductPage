@@ -26,15 +26,4 @@
       </class> <!-- Testcases.HomePageTest -->
     </classes>
   </test> <!-- HomePage(failed) -->
-  <test thread-count="5" name="ResultsPage(failed)">
-    <classes>
-      <class name="Testcases.ResultsPageTest">
-        <methods>
-          <include name="testTeardown"/>
-          <include name="testStartup"/>
-          <include name="getLinkHeadersTest"/>
-        </methods>
-      </class> <!-- Testcases.ResultsPageTest -->
-    </classes>
-  </test> <!-- ResultsPage(failed) -->
 </suite> <!-- Failed suite [Suite] -->

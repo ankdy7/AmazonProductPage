@@ -1,5 +1,6 @@
 package Testcases;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -32,8 +33,9 @@ public class HomePageTest extends BaseTest {
 	}
 
 	@Test(priority = 0)
-	public void getLinkHeadersTest() {
-		homepage.getLinkHeaders();
+	public void checkSelectTextTest() {
+
+		Assert.assertEquals(homepage.checkSelectText(), "Apps for Android");
 
 	}
 

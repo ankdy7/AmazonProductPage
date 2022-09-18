@@ -36,15 +36,16 @@ public class ResultsPageTest extends BaseTest {
 	}
 
 	@Test(priority = 0)
-	public void getLinkHeadersTest() {
+	public void checkPriceTest() {
 		System.out.println("Fetched Price: " + resultspage.checkPrice());
 		Assert.assertEquals(resultspage.checkPrice(), "65,900");
-		resultspage.openProdcutPage();
+		
 
 	}
 
 	@Test(priority = 1)
 	public void openProductPageTest() {
+		resultspage.openProdcutPage();
 		String str = prop.getProperty("itemName");
 		if (!resultspage.openProductPage().contains(str))
 			Assert.fail();
