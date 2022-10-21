@@ -41,6 +41,11 @@ public class ResultsPage extends BaseTest {
 			}
 
 		}
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		return driver.switchTo().window(child_window).getTitle();
 
 	}

@@ -11,6 +11,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.io.FileHandler;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -19,42 +21,45 @@ public class BaseTest {
 
 	public static WebDriver driver;
 	public static Properties prop;
-	
+
 	public BaseTest() {
 		prop = new Properties();
 		try {
-			InputStream input = new FileInputStream(System.getProperty("user.dir")+"//config//config.properties");
+			InputStream input = new FileInputStream(System.getProperty("user.dir") + "//config//config.properties");
 			prop.load(input);
 		} catch (Exception e) {
-			
+
 			e.printStackTrace();
-		} 
+		}
 	}
-	
+
 	public void setupDriver() {
-		
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		
+		if (prop.getProperty("browser").equalsIgnoreCase("chrome")) {
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+		} else if (prop.getProperty("browser").equalsIgnoreCase("firefox")) {
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+		} else if (prop.getProperty("browser").equalsIgnoreCase("edge")) {
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+		}
+
 		driver.get("https://amazon.in");
 		driver.manage().window().maximize();
-		//driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
-		//driver.findElement(By.xpath("//a[@aria-label='Amazon']")).click();
-		
+		// driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+		// driver.findElement(By.xpath("//a[@aria-label='Amazon']")).click();
+
 	}
-	
+
 	public String getScreenshot(String testCase) throws IOException {
-		
-		TakesScreenshot ts= (TakesScreenshot) driver;
+
+		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
-		File file = new File(System.getProperty("user.dir")+"//Screenshots//"+testCase+".png");
+		File file = new File(System.getProperty("user.dir") + "//Screenshots//" + testCase + ".png");
 		FileHandler.copy(source, file);
-		return System.getProperty("user.dir")+"//Screenshots//"+testCase+".png";
-		
+		return System.getProperty("user.dir") + "//Screenshots//" + testCase + ".png";
+
 	}
-	
-	
-	
-	
 
 }

@@ -1,29 +1,156 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-18T16:39:16 IST" name="Default suite" finished-at="2022-09-18T16:39:36 IST" duration-ms="20103">
+  <suite started-at="2022-09-19T15:12:21 IST" name="Suite" finished-at="2022-09-19T15:13:30 IST" duration-ms="68952">
     <groups>
     </groups>
-    <test started-at="2022-09-18T16:39:16 IST" name="Default test" finished-at="2022-09-18T16:39:36 IST" duration-ms="20103">
-      <class name="Testcases.HomePageTest">
-        <test-method is-config="true" signature="testStartup()[pri:0, instance:Testcases.HomePageTest@24aed80c]" started-at="2022-09-18T16:39:16 IST" name="testStartup" finished-at="2022-09-18T16:39:27 IST" duration-ms="10619" status="PASS">
+    <test started-at="2022-09-19T15:12:21 IST" name="Login" finished-at="2022-09-19T15:12:38 IST" duration-ms="17076">
+      <class name="Testcases.LoginTest">
+        <test-method is-config="true" signature="testStartup()[pri:0, instance:Testcases.LoginTest@503f91c3]" started-at="2022-09-19T15:12:21 IST" name="testStartup" finished-at="2022-09-19T15:12:32 IST" duration-ms="10540" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStartup -->
-        <test-method signature="checkAllDropDownTest()[pri:0, instance:Testcases.HomePageTest@24aed80c]" started-at="2022-09-18T16:39:27 IST" name="checkAllDropDownTest" finished-at="2022-09-18T16:39:33 IST" duration-ms="6529" status="PASS">
+        <test-method signature="checkHomePageNameTest()[pri:0, instance:Testcases.LoginTest@503f91c3]" started-at="2022-09-19T15:12:32 IST" name="checkHomePageNameTest" finished-at="2022-09-19T15:12:32 IST" duration-ms="176" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkAllDropDownTest -->
-        <test-method signature="enterItemNameTest()[pri:1, instance:Testcases.HomePageTest@24aed80c]" started-at="2022-09-18T16:39:33 IST" name="enterItemNameTest" finished-at="2022-09-18T16:39:36 IST" duration-ms="2569" status="PASS">
+        </test-method> <!-- checkHomePageNameTest -->
+        <test-method signature="checkSignInButtonTest()[pri:1, instance:Testcases.LoginTest@503f91c3]" started-at="2022-09-19T15:12:32 IST" name="checkSignInButtonTest" finished-at="2022-09-19T15:12:33 IST" duration-ms="1206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSignInButtonTest -->
+        <test-method signature="checkSignInPageTest()[pri:2, instance:Testcases.LoginTest@503f91c3]" started-at="2022-09-19T15:12:33 IST" name="checkSignInPageTest" finished-at="2022-09-19T15:12:33 IST" duration-ms="135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSignInPageTest -->
+        <test-method signature="checkSignInHeaderTest()[pri:3, instance:Testcases.LoginTest@503f91c3]" started-at="2022-09-19T15:12:33 IST" name="checkSignInHeaderTest" finished-at="2022-09-19T15:12:33 IST" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSignInHeaderTest -->
+        <test-method signature="enterInavlidUsernameTest()[pri:4, instance:Testcases.LoginTest@503f91c3]" started-at="2022-09-19T15:12:33 IST" name="enterInavlidUsernameTest" finished-at="2022-09-19T15:12:34 IST" duration-ms="1042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterInavlidUsernameTest -->
+        <test-method signature="enterInavlidPasswordTest()[pri:5, instance:Testcases.LoginTest@503f91c3]" started-at="2022-09-19T15:12:34 IST" name="enterInavlidPasswordTest" finished-at="2022-09-19T15:12:38 IST" duration-ms="3343" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: MicrosoftEdge=105.0.1343.42)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-3SNRJKF', ip: '192.168.0.197', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [4fe2840e7ffe16bee66a5473696b07cc, getElementText {id=e8698446-fbec-4ea1-adbb-ccd6ecde945e}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 105.0.1343.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:49912}, msedge: {msedgedriverVersion: 105.0.1343.42 (a7d028ad8493..., userDataDir: C:\Users\Dank\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49912/devtoo..., se:cdpVersion: 105.0.1343.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (4fe2840e7ffe16bee66a5473696b07cc)] -> css selector: h4.a-alert-heading]
+Session ID: 4fe2840e7ffe16bee66a5473696b07cc]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: MicrosoftEdge=105.0.1343.42)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-3SNRJKF', ip: '192.168.0.197', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [4fe2840e7ffe16bee66a5473696b07cc, getElementText {id=e8698446-fbec-4ea1-adbb-ccd6ecde945e}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 105.0.1343.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:49912}, msedge: {msedgedriverVersion: 105.0.1343.42 (a7d028ad8493..., userDataDir: C:\Users\Dank\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49912/devtoo..., se:cdpVersion: 105.0.1343.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (4fe2840e7ffe16bee66a5473696b07cc)] -> css selector: h4.a-alert-heading]
+Session ID: 4fe2840e7ffe16bee66a5473696b07cc
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:201)
+at PageObjects.LoginPage.invalidPasswordText(LoginPage.java:128)
+at Testcases.LoginTest.enterInavlidPasswordTest(LoginTest.java:65)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterInavlidPasswordTest -->
+        <test-method is-config="true" signature="testTeardown()[pri:0, instance:Testcases.LoginTest@503f91c3]" started-at="2022-09-19T15:12:38 IST" name="testTeardown" finished-at="2022-09-19T15:12:38 IST" duration-ms="321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTeardown -->
+      </class> <!-- Testcases.LoginTest -->
+    </test> <!-- Login -->
+    <test started-at="2022-09-19T15:12:39 IST" name="HomePage" finished-at="2022-09-19T15:13:03 IST" duration-ms="23996">
+      <class name="Testcases.HomePageTest">
+        <test-method is-config="true" signature="testStartup()[pri:0, instance:Testcases.HomePageTest@776a6d9b]" started-at="2022-09-19T15:12:39 IST" name="testStartup" finished-at="2022-09-19T15:12:54 IST" duration-ms="15033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStartup -->
+        <test-method signature="checkSelectTextTest()[pri:0, instance:Testcases.HomePageTest@776a6d9b]" started-at="2022-09-19T15:12:54 IST" name="checkSelectTextTest" finished-at="2022-09-19T15:12:59 IST" duration-ms="5427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSelectTextTest -->
+        <test-method signature="enterItemNameTest()[pri:1, instance:Testcases.HomePageTest@776a6d9b]" started-at="2022-09-19T15:12:59 IST" name="enterItemNameTest" finished-at="2022-09-19T15:13:02 IST" duration-ms="3268" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterItemNameTest -->
-        <test-method is-config="true" signature="testTeardown()[pri:0, instance:Testcases.HomePageTest@24aed80c]" started-at="2022-09-18T16:39:36 IST" name="testTeardown" finished-at="2022-09-18T16:39:36 IST" duration-ms="318" status="PASS">
+        <test-method is-config="true" signature="testTeardown()[pri:0, instance:Testcases.HomePageTest@776a6d9b]" started-at="2022-09-19T15:13:02 IST" name="testTeardown" finished-at="2022-09-19T15:13:03 IST" duration-ms="261" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTeardown -->
       </class> <!-- Testcases.HomePageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- HomePage -->
+    <test started-at="2022-09-19T15:13:03 IST" name="ResultsPage" finished-at="2022-09-19T15:13:30 IST" duration-ms="27338">
+      <class name="Testcases.ResultsPageTest">
+        <test-method is-config="true" signature="testStartup()[pri:0, instance:Testcases.ResultsPageTest@3576ddc2]" started-at="2022-09-19T15:13:03 IST" name="testStartup" finished-at="2022-09-19T15:13:20 IST" duration-ms="17695" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStartup -->
+        <test-method signature="checkPriceTest()[pri:0, instance:Testcases.ResultsPageTest@3576ddc2]" started-at="2022-09-19T15:13:20 IST" name="checkPriceTest" finished-at="2022-09-19T15:13:20 IST" duration-ms="118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPriceTest -->
+        <test-method signature="openProductPageTest()[pri:1, instance:Testcases.ResultsPageTest@3576ddc2]" started-at="2022-09-19T15:13:20 IST" name="openProductPageTest" finished-at="2022-09-19T15:13:26 IST" duration-ms="6013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openProductPageTest -->
+        <test-method is-config="true" signature="testTeardown()[pri:0, instance:Testcases.ResultsPageTest@3576ddc2]" started-at="2022-09-19T15:13:26 IST" name="testTeardown" finished-at="2022-09-19T15:13:30 IST" duration-ms="3507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTeardown -->
+      </class> <!-- Testcases.ResultsPageTest -->
+    </test> <!-- ResultsPage -->
+  </suite> <!-- Suite -->
 </testng-results>

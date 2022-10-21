@@ -8,12 +8,47 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">20,103</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Login</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">17,076</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">HomePage</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">23,996</td><td></td><td></td></tr>
+<tr><td><a href="#t2">ResultsPage</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">27,338</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">9</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">68,410</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">Testcases.HomePageTest</td><td><a href="#m0">checkAllDropDownTest</a></td><td rowspan="1">1663499367397</td><td rowspan="1">6529</td></tr><tr class="passedeven"><td><a href="#m1">enterItemNameTest</a></td><td rowspan="1">1663499373931</td><td rowspan="1">2569</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Testcases.LoginTest</td><td><a href="#m0">enterInavlidPasswordTest</a></td><td rowspan="1">1663580554797</td><td rowspan="1">3343</td></tr><tr><th colspan="4">Login &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">Testcases.LoginTest</td><td><a href="#m1">checkHomePageNameTest</a></td><td rowspan="1">1663580552174</td><td rowspan="1">176</td></tr><tr class="passedeven"><td><a href="#m2">checkSignInButtonTest</a></td><td rowspan="1">1663580552367</td><td rowspan="1">1206</td></tr><tr class="passedeven"><td><a href="#m3">checkSignInHeaderTest</a></td><td rowspan="1">1663580553714</td><td rowspan="1">36</td></tr><tr class="passedeven"><td><a href="#m4">checkSignInPageTest</a></td><td rowspan="1">1663580553577</td><td rowspan="1">135</td></tr><tr class="passedeven"><td><a href="#m5">enterInavlidUsernameTest</a></td><td rowspan="1">1663580553753</td><td rowspan="1">1042</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">HomePage &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">Testcases.HomePageTest</td><td><a href="#m6">checkSelectTextTest</a></td><td rowspan="1">1663580574122</td><td rowspan="1">5427</td></tr><tr class="passedeven"><td><a href="#m7">enterItemNameTest</a></td><td rowspan="1">1663580579551</td><td rowspan="1">3268</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">ResultsPage &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">Testcases.ResultsPageTest</td><td><a href="#m8">checkPriceTest</a></td><td rowspan="1">1663580600835</td><td rowspan="1">118</td></tr><tr class="passedeven"><td><a href="#m9">openProductPageTest</a></td><td rowspan="1">1663580600955</td><td rowspan="1">6013</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">Testcases.HomePageTest#checkAllDropDownTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Testcases.HomePageTest#enterItemNameTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Login</h2><h3 id="m0">Testcases.LoginTest#enterInavlidPasswordTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: MicrosoftEdge=105.0.1343.42)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;DESKTOP-3SNRJKF&apos;, ip: &apos;192.168.0.197&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [4fe2840e7ffe16bee66a5473696b07cc, getElementText {id=e8698446-fbec-4ea1-adbb-ccd6ecde945e}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 105.0.1343.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:49912}, msedge: {msedgedriverVersion: 105.0.1343.42 (a7d028ad8493..., userDataDir: C:\Users\Dank\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49912/devtoo..., se:cdpVersion: 105.0.1343.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (4fe2840e7ffe16bee66a5473696b07cc)] -&gt; css selector: h4.a-alert-heading]
+Session ID: 4fe2840e7ffe16bee66a5473696b07cc
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:201)
+	at PageObjects.LoginPage.invalidPasswordText(LoginPage.java:128)
+	at Testcases.LoginTest.enterInavlidPasswordTest(LoginTest.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Testcases.LoginTest#checkHomePageNameTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Testcases.LoginTest#checkSignInButtonTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Testcases.LoginTest#checkSignInHeaderTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Testcases.LoginTest#checkSignInPageTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Testcases.LoginTest#enterInavlidUsernameTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>HomePage</h2><h3 id="m6">Testcases.HomePageTest#checkSelectTextTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Testcases.HomePageTest#enterItemNameTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ResultsPage</h2><h3 id="m8">Testcases.ResultsPageTest#checkPriceTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">Testcases.ResultsPageTest#openProductPageTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

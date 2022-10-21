@@ -15,15 +15,4 @@
       </class> <!-- Testcases.LoginTest -->
     </classes>
   </test> <!-- Login(failed) -->
-  <test thread-count="5" name="HomePage(failed)">
-    <classes>
-      <class name="Testcases.HomePageTest">
-        <methods>
-          <include name="testTeardown"/>
-          <include name="getLinkHeadersTest"/>
-          <include name="testStartup"/>
-        </methods>
-      </class> <!-- Testcases.HomePageTest -->
-    </classes>
-  </test> <!-- HomePage(failed) -->
 </suite> <!-- Failed suite [Suite] -->
